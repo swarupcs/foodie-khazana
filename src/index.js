@@ -8,6 +8,9 @@ import Body from './components/Body';
 import About from './components/About';
 import Contact from './components/Contact';
 import Layout from './components/Layout';
+import RestaurantMenu from './components/RestaurantMenu';
+import Instamart from './components/Instamart';
+import Cart from './components/Cart';
 
 const router = createBrowserRouter(
 [  {
@@ -29,12 +32,16 @@ const router = createBrowserRouter(
     },
     {
       path:"/restaurant/:resId",
-      // element:
+      element: <RestaurantMenu/>
     },
     {
       path: "/instamart",
-      // element: 
+      element: <Instamart/>
     },
+    {
+      path: "/cart",
+      element: <Cart/>
+    }
   ]
 
 }]
